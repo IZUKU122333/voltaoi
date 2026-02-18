@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>⚡ VoltaOI</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#1e293b" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>⚡ VoltaOI</h1>
+      <p id="status">Loading model...</p>
+    </header>
+
+    <div id="chat-box"></div>
+
+    <div class="input-area">
+      <textarea 
+        id="user-input" 
+        placeholder="Ask anything... (works offline after first load)"
+        rows="2"
+      ></textarea>
+      <button id="send-btn" onclick="sendMessage()">Send</button>
+      <button id="clear-btn" onclick="clearChat()">Clear</button>
+    </div>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
